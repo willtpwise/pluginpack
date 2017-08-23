@@ -25,7 +25,7 @@ E.g. `wp-content/plugins/my-plugin/`
 ```shell
 $ ./bin/pluginpack.sh "My Plugin" http://localhost:8888/local-wp/
 ```
-Replace `My Plugin` with the name of your plugin and replace `http://localhost:8888/local-wp/` with the URL to your local Wordpress site.
+Replace `My Plugin` with the name of your plugin and `http://localhost:8888/local-wp/` with the URL of your local Wordpress site.
 
 ### Step 3
 Install the repo's dependencies
