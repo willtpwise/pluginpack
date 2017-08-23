@@ -23,7 +23,7 @@ require __DIR__ . "/inc/dependencies.php";
 function plugin_pack_well_done() {
   ?>
   <div class="updated notice">
-    <p>You"ve successfull installed the plugin pack.<br>
+    <p>You\'ve successfull installed the plugin pack.<br>
 			Now head to <code>plugin-pack/index.php</code> and start your plugin.</p>
   </div>
   <?php
