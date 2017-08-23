@@ -7,7 +7,7 @@
 
 $env = __DIR__ . '/../dist/config/environment.json';
 $env = file_get_contents($env);
-$env = json_decode($env);
+$env = json_decode($env, true);
 
 $GLOBALS['PLUGIN_PACK_ENV'] = $env;
 
