@@ -23,14 +23,14 @@ E.g. `wp-content/plugins/my-plugin/`
 ### Step 2
 [CD](http://guides.macrumors.com/cd) to the plugin's directory and init the builder
 ```shell
-$ ./bin/pluginpack.sh "My Plugin" http://localhost:8888/local-wp/
+./bin/pluginpack.sh "My Plugin" http://localhost:8888/local-wp/
 ```
 Replace `My Plugin` with the name of your plugin and `http://localhost:8888/local-wp/` with the URL of your local Wordpress site.
 
 ### Step 3
 Install the repo's dependencies
 ```shell
-$ npm install
+npm install
 ```
 Tip: You can also use `yarn` for all the commands in this repo
 
@@ -40,7 +40,7 @@ From your Wordpress admin screen, 'activate' the plugin
 ### Step 5
 Spin up the developer environment
 ```shell
-$ npm run dev
+npm run dev
 ```
 
 ### Step 6
@@ -55,7 +55,7 @@ good to go. Head over to `plugin-pack/index.php` and start developing.
 When you're ready to build for production (with minification, hash URLs, etc)
 just stop the `dev` command with `ctrl + c` then run the `build` command.
 ```shell
-$ npm run build
+npm run build
 ```
 
 ## Problems or Issues
