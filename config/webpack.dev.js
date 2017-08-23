@@ -9,7 +9,7 @@ const autoInjectPlugin = require('auto-inject-webpack-plugin')
 const commonsChunkPlugin = webpack.optimize.CommonsChunkPlugin
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const GenerateFilePlugin = require('generate-file-plugin')
-const ProxyPath = JSON.stringify(require("./config.json").ProxyPath)
+const ProxyPath = require("./config.json").ProxyPath
 
 const webpackConfig = {
   entry: [
