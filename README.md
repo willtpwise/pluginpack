@@ -23,9 +23,15 @@ E.g. `wp-content/plugins/my-plugin/`
 ### Step 2
 [CD](http://guides.macrumors.com/cd) to the plugin's directory and init the builder
 ```shell
-# Replace <site> with your MAMP site URL
-# Make sure to include the whole URL (E.g. http://localhost:8888/local-wp/)
-$ ./bin/pluginpack.sh <site>
+$ ./bin/pluginpack.sh <name> <MAMP>
+```
+Replace <name> with the name of your plugin and use quotes to enclose
+
+Replace <MAMP> with your MAMP site URL and make sure to include the whole URL (E.g.
+  http://localhost:8888/local-wp/)
+```shell
+# E.g.
+$ ./bin/pluginpack.sh "My Plugin" http://localhost:8888/local-wp/
 ```
 
 ### Step 3
