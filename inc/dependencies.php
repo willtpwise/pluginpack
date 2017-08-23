@@ -6,14 +6,15 @@
  */
 
 add_action('wp_enqueue_scripts', function () {
-  $hash = $GLOBALS['PLUGIN_PACK_ENV']['HASH'];
-  $name = $GLOBALS['PLUGIN_PACK_ENV']['NAME'];
+  $env = $GLOBALS['PLUGIN_PACK_ENV'];
+  $hash = $env['NODE'] === 'production' ? $env['HASH'] : 'dev';
+  $name = $env['NAME'];
   wp_enqueue_script(
     $name,
-    plugin_dir_url(__FILE__) . 'dist/bundle.' . $hash . '.js'
+    plugin_dir_url(__FILE__) . '../dist/bundle.' . $hash . '.js'
   );
   wp_enqueue_style(
     $name,
-    plugin_dir_url(__FILE__) . 'dist/bundle.' . $hash . '.js'
+    plugin_dir_url(__FILE__) . '../dist/bundle.' . $hash . '.css'
   );
 });
