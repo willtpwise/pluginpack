@@ -45,18 +45,17 @@ npm run dev
 
 ### Step 6
 Your favorite browser should open up `http://localhost:xxxx` and in it should be
-a proxied version of your Wordpress install. Login to your site, then activate
-the plugin through the `Dashboard/Plugins` screen.
+a proxied version of your Wordpress install.
 
-### Step 7
-If your Wordpress admin screen sends you a successful install message then you're
-good to go. Head over to `plugin-pack/index.php` and start developing.
+## Building for production
 
 When you're ready to build for production (with minification, hash URLs, etc)
-just stop the `dev` command with `ctrl + c` then run the `build` command.
+just run the `build` command.
 ```shell
 npm run build
 ```
+The `dist` folder will be filled with the static assets, named with a unique hash
+ to support unlimited cacheing.
 
 ## Problems or Issues
 Open a pull request with a fix, or log an issue in the issues tab.
