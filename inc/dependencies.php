@@ -9,12 +9,13 @@ add_action('wp_enqueue_scripts', function () {
   $env = $GLOBALS['PLUGIN_PACK_ENV'];
   $hash = $env['NODE'] === 'production' ? $env['HASH'] : 'dev';
   $name = $env['NAME'];
+  $path = str_replace(plugin_dir_url(__FILE__), '../', '/');
   wp_enqueue_script(
     $name,
-    plugin_dir_url(__FILE__) . '../dist/bundle.' . $hash . '.js'
+    $path . 'dist/bundle.' . $hash . '.js'
   );
   wp_enqueue_style(
     $name,
-    plugin_dir_url(__FILE__) . '../dist/bundle.' . $hash . '.css'
+    $path . 'dist/bundle.' . $hash . '.css'
   );
 });
