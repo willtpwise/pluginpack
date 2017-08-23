@@ -27,3 +27,6 @@ npm-debug.log
 # Visual Studio Code
 .vscode
 .history
+
+# Hot update spinners
+*.hot-update.js
