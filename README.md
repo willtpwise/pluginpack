@@ -14,18 +14,20 @@ walkthroughs.
 * [Installing Node.js and NPM](http://blog.teamtreehouse.com/install-node-js-npm-mac)
 
 ## Installing
-Follow these steps to install the plugin pack.
+Turn on your MAMP server, then follow these steps to install the plugin pack.
 
 ### Step 1
-Drop a copy of this repo into your local Wordpress site's plugin directory.
-E.g. `wp-content/plugins/my-plugin/`
+[Fork](https://help.github.com/articles/fork-a-repo/) this repo into your local
+Wordpress site's plugin directory.
+E.g. `wp-content/plugins/my-forked-pluginpack/`
 
 ### Step 2
 [CD](http://guides.macrumors.com/cd) to the plugin's directory and init the builder
 ```shell
 ./bin/pluginpack.sh "My Plugin" http://localhost:8888/local-wp/
 ```
-Replace `My Plugin` with the name of your plugin and `http://localhost:8888/local-wp/` with the URL of your local Wordpress site.
+Replace `My Plugin` with the name of your plugin and `http://localhost:8888/local-wp/`
+with the URL of your local Wordpress site.
 
 ### Step 3
 Install the repo's dependencies
