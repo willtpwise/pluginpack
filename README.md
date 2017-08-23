@@ -2,7 +2,7 @@
 
 [Wordpress](https://en-au.wordpress.org/) plugin pack, running a
 [Webpack](https://webpack.js.org/) build system. Features include browsersync,
-ES6 & Babel.js and SASS stylesheets.
+ES6 & Babel.js and SASS.
 
 ## Prerequisites
 * A local Wordpress install, running on MAMP
@@ -17,8 +17,8 @@ walkthroughs.
 Follow these steps to install the plugin pack.
 
 ### Step 1
-Drop this folder into your local Wordpress site's plugin directory
-`wp-content/plugins/plugin-pack/`
+Drop a copy of this repo into your local Wordpress site's plugin directory.
+E.g. `wp-content/plugins/my-plugin/`
 
 ### Step 2
 [CD](http://guides.macrumors.com/cd) to the plugin's directory and init the builder
