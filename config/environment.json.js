@@ -7,5 +7,5 @@
 module.exports = JSON.stringify({
   HASH: module.compilation.hash,
   NODE: process.env.NODE_ENV || 'development',
-  NAME: JSON.stringify(require('../package.json').name)
+  NAME: require('../package.json').name
 })
