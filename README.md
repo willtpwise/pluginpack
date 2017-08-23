@@ -24,7 +24,7 @@ E.g. `wp-content/plugins/my-forked-pluginpack/`
 ### Step 2
 [CD](http://guides.macrumors.com/cd) to the plugin's directory and init the builder
 ```shell
-./bin/pluginpack.sh "My Plugin" http://localhost:8888/local-wp/
+./bin/pluginpack.sh "My Plugin" "http://localhost:8888/local-wp/"
 ```
 Replace `My Plugin` with the name of your plugin and `http://localhost:8888/local-wp/`
 with the URL of your local Wordpress site.
@@ -45,9 +45,11 @@ Spin up the developer environment
 npm run dev
 ```
 
-### Step 6
-Your favorite browser should open up `http://localhost:xxxx` and in it should be
+Your favorite browser will open up `http://localhost:xxxx` and in it should be
 a proxied version of your Wordpress install.
+
+You can stop the dev server with <kbd>CTRL</kbd>+<kbd>C</kbd>, then start it up
+again with `npm run dev`.
 
 ## Building for production
 
@@ -56,8 +58,7 @@ just run the `build` command.
 ```shell
 npm run build
 ```
-The `dist` folder will be filled with the static assets, named with a unique hash
- to support unlimited cacheing.
 
 ## Problems or Issues
-Open a pull request with a fix, or log an issue in the issues tab.
+Open a [pull request](https://help.github.com/articles/creating-a-pull-request/)
+with a fix, or log an issue in the [issues tab](https://github.com/willtpwise/pluginpack/issues).
