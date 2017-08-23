@@ -30,3 +30,4 @@ npm-debug.log
 
 # Hot update spinners
 *.hot-update.js
+*.hot-update.json
